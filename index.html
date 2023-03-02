@@ -8,22 +8,30 @@
     <title>Momentum</title>
 </head> 
    
-<body> <!--로그인--> 
-    <div class="div-login">
-        <form id="login-form" class="hidden">
-            <input required maxlength=10 type="text" placeholder="사용하는 인간의 이름은?">
-            <input type="submit" value="결정">
-        </form> 
+<body>
+
+    <!--날씨-->
+    <div id="weather">
+        <span></span>
+        <span></span>
     </div>
     <!--시계-->
     <div class="div-clock">
         <h2 id="clock">00:00</h2>
         <h1 id="greeting" class="hidden"></h1>
     </div>
+    <!--로그인--> 
+    <div class="div-login">
+        <form id="login-form" class="hidden">
+            <input required maxlength=10 type="text" placeholder="사용자의 이름은?">
+            <input type="submit" value="결정">
+        </form> 
+    </div>
+
         <!--투두리스트-->
     <div class="div-todo">
         <form id="todo-form"> 
-            <input type="text" placeholder="오늘 할 일 입력으로 의지가 차오른다" required />
+            <input type="text" placeholder="오늘 할 일을 입력해! (Enter)" required />
         </form>
         <ul id="todo-list">
         </ul>
@@ -33,12 +41,7 @@
         <span></span>
         <span></span>
     </div> 
-    <!--날씨-->
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-
+ 
     <script src="js/greeting.js"></script>
     <script src="js/clock.js" ></script>
     <script src="js/quotes.js"></script>

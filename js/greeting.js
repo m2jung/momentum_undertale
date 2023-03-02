@@ -15,7 +15,7 @@ function loginSubmit(event) {
 }
 
 function paintGreetings(username){
-    greeting.innerText = ` ${username} `;
+    greeting.innerText = ` 어서와 ${username} :)`;
     greeting.classList.remove(HIDDEN_CLASSNAME);  
 }
 
